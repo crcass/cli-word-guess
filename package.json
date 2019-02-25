@@ -1,0 +1,26 @@
+{
+  "name": "cli-word-guess",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crcass/cli-word-guess.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crcass/cli-word-guess/issues"
+  },
+  "homepage": "https://github.com/crcass/cli-word-guess#readme",
+  "dependencies": {
+    "inquirer": "^6.2.2"
+  },
+  "devDependencies": {
+    "eslint": "^5.14.1",
+    "eslint-config-google": "^0.12.0"
+  }
+}
