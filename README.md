@@ -18,6 +18,6 @@ If the user reduces the remaining letters to 0 before correctly guessing the ans
 In either case, the user will be prompted to start a new game or exit. If the user choosed to continue, the game will reset, a new word will be chosen at random, and the score will increment depending on the win or loss condition.
 
 ## Known Issues
-* The user may enter more that one character as a guess, but any guesses longer than one character will be counted as incorrect
+* No current issues. Please report as you discover problems!
 
 ♥︎ cc
