@@ -67,12 +67,12 @@ let playGame = () => {
       }
       if (winCond === currentPrez.word.length) {
         wins++;
-        console.log('You Win!\n');
+        console.log(`${chalk.green.bold('You Win!')}\n`);
         console.log(`Wins: ${wins}, Losses: ${losses}\n`);
         handleRestart();
       } else if (lossCond <= 0) {
         losses++;
-        console.log('Game Over!\n');
+        console.log(`${chalk.red.bold('Game Over!')}\n`);
         console.log(`Wins: ${wins}, Losses: ${losses}\n`);
         handleRestart();
       } else {
