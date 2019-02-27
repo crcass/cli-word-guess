@@ -15,7 +15,7 @@ As the user guesses incorrect letters, the number of remaining guesses will redu
 If the user correctly guesses all the correct letters before the remaining guesses = 0, a win message will display.
 If the user reduces the remaining letters to 0 before correctly guessing the answer, a game over message will display.
 
-In either case, the user will be prompted to start a new game or exit. If the user choosed to continue, the game will reset, a new word will be chosen at random,  and the score with increment depending on the win or loss condition.
+In either case, the user will be prompted to start a new game or exit. If the user choosed to continue, the game will reset, a new word will be chosen at random, and the score will increment depending on the win or loss condition.
 
 ## Known Issues
 * The user may enter more that one character as a guess, but any guesses longer than one character will be counted as incorrect
