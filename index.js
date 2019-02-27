@@ -2,6 +2,7 @@ const Word = require('./word.js');
 const inquirer = require('inquirer');
 const chalk = require('chalk');
 
+// array containing possible solutions
 const presidents = [
   'taft',
   'wilson',
@@ -21,9 +22,11 @@ const presidents = [
   'clinton'
 ];
 
+// variables to store session wins & losses
 let wins = 0;
 let losses = 0;
 
+// main game logic
 let playGame = () => {
   let winCond = 0;
 
@@ -78,6 +81,7 @@ let playGame = () => {
     });
 };
 
+// logic to start a new game
 let newGame = () => {
   console.clear();
   console.log(`                           ${chalk.redBright('*')}${chalk.grey('*')}${chalk.blueBright('*')} ${chalk.bold('Hail to the Chief!')} ${chalk.blueBright('*')}${chalk.grey('*')}${chalk.redBright('*')}`);
@@ -94,6 +98,7 @@ let newGame = () => {
   playGame();
 };
 
+// logic to handle restarting the game
 let handleRestart = () => {
   inquirer
     .prompt([
@@ -113,4 +118,5 @@ let handleRestart = () => {
     })
 }
 
+// actually starts the game
 newGame();
