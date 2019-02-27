@@ -44,7 +44,11 @@ let playGame = () => {
       console.log(`                    Try to guess the President's last name!`);
       currentPrez.checkLetters(answers.letter);
       console.log(chalk`\n                                   {bold ${currentPrez.displayWord().toUpperCase()}}\n`);
-      if (!answers.letter.match(/[A-Za-z]/g)) {
+      if (answers.letter.length > 1) {
+        console.log(`${chalk.red.bold('One guess at a time!')}`);
+        console.log('---------------------\n');
+        console.log(`Unused Letters: ${unused}\n`);
+      } else if (!answers.letter.match(/[A-Za-z]/g)) {
         console.log(`${chalk.red.bold('Letters only!')}`);
         console.log('---------------------\n');
         console.log(`Unused Letters: ${unused}\n`);
