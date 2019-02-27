@@ -12,7 +12,7 @@ class Letter {
     };
 
     this.handleGuess = letter => {
-      if (this.charGuessed === true) {
+      if (this.charGuessed) {
         return this.charGuessed = true;
       } else if (letter === this.char) {
         return this.charGuessed = true;

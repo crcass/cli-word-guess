@@ -8,8 +8,8 @@ class Word {
 
     this.displayWord = () => {
       return this.word.map(letter => {
-            return letter.guessLetter();
-          }).join(' ');
+        return letter.guessLetter();
+      }).join(' ');
     };
 
     this.checkLetters = letter => {
