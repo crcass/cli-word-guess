@@ -123,7 +123,7 @@ const handleRestart = () => {
       }
     ])
     .then(answers => {
-      if (answers.restart === true) {
+      if (answers.restart) {
         newGame();
       } else {
         console.log(`\n${chalk.cyan.bold('Thanks for playing!')}\n`);
